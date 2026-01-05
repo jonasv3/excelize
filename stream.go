@@ -808,8 +808,10 @@ func (bw *bufferedWriter) Sync() (err error) {
 		bw.tmp, err = os.CreateTemp(bw.tmpDir, "excelize-")
 		if err != nil {
 			// can not use local storage
+			fmt.Printf("can not use local storage: %v\n", err)
 			return nil
 		}
+		fmt.Println("used tempfiles")
 	}
 	return bw.Flush()
 }

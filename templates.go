@@ -182,7 +182,7 @@ const (
 	MaxSheetNameLength   = 31
 	MinColumns           = 1
 	MinFontSize          = 1
-	StreamChunkSize      = 1 << 24
+	StreamChunkSize      = 1 << 18
 	TotalCellChars       = 32767
 	TotalRows            = 1048576
 	TotalSheetHyperlinks = 65529
